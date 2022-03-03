@@ -25,6 +25,7 @@ class FileDataIsNullException : Exception
 class Img
 {
     package(raylib_misc.images) Image image;
+    alias image this;
 
     this(string fileName)
     {
@@ -77,7 +78,7 @@ class Img
 
     this(Img image, Rect rectangle)
     {
-        this(image.image, rectangle.toRectangle);
+        this(image.image, rectangle);
     }
 
     ~this()

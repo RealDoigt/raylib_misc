@@ -26,17 +26,17 @@ class Tx2d
 
     ~this()
     {
-        UnloadTexture(texture);
+        texture.UnloadTexture;
     }
 
     void update(Img image)
     {
-        UpdateTexture(texture, image.image.data);
+        UpdateTexture(this, image.data);
     }
 
     void update(Img image, Rectangle rectangle)
     {
-        UpdateTextureRec(texture, rectangle, image.image.data);
+        UpdateTextureRec(this, rectangle, image.data);
     }
 
     void generateMipmaps()
@@ -46,66 +46,86 @@ class Tx2d
 
     void setFilter(int filter)
     {
-        SetTextureFilter(texture, filter);
+        SetTextureFilter(this, filter);
     }
 
     void setWrap(int wrap)
     {
-        SetTextureWrap(texture, wrap);
+        SetTextureWrap(this, wrap);
     }
 
     void draw(int x, int y, Color tint = white)
     {
-        DrawTexture(texture, x, y, tint);
+        DrawTexture(this, x, y, tint);
     }
 
     void draw(Vector2 position, Color tint = white)
     {
-        DrawTextureV(texture, position, tint);
+        DrawTextureV(this, position, tint);
     }
 
     void draw(int x, int y, float rotation, float scale, Color tint = white)
     {
-        DrawTextureEx(texture, Vector2(x, y), rotation, scale, tint);
+        DrawTextureEx(this, Vector2(x, y), rotation, scale, tint);
     }
 
     void draw(Vector2 position, float rotation, float scale, Color tint = white)
     {
-        DrawTextureEx(texture, position, rotation, scale, tint);
+        DrawTextureEx(this, position, rotation, scale, tint);
     }
 
     void draw(Rectangle source, int x, int y, Color tint = white)
     {
-        DrawTextureRec(texture, source, Vector2(x, y), tint);
+        DrawTextureRec(this, source, Vector2(x, y), tint);
     }
 
     void draw(Rectangle source, Vector2 position, Color tint = white)
     {
-        DrawTextureRec(texture, source, position, tint);
+        DrawTextureRec(this, source, position, tint);
     }
 
     void draw(Vector2 tiling, Vector2 offset, Rectangle quad, Color tint = white)
     {
-        DrawTextureQuad(texture, tiling, offset, quad, tint);
+        DrawTextureQuad(this, tiling, offset, quad, tint);
     }
 
     void draw(Rectangle source, Rectangle dest, Vector2 origin, float rotation, Color tint = white)
     {
-        DrawTexturePro(texture, source, dest, origin, rotation, tint);
+        DrawTexturePro(this, source, dest, origin, rotation, tint);
     }
 
     void drawTiled(Rectangle source, Rectangle dest, Vector2 origin, float rotation, float scale, Color tint = white)
     {
-        DrawTextureTiled(texture, source, dest, origin, rotation, scale, tint);
+        DrawTextureTiled(this, source, dest, origin, rotation, scale, tint);
     }
 
     void drawNPatch(NPatchInfo nPatchInfo, Rectangle dest, Vector2 origin, float rotation, Color tint = white)
     {
-        DrawTextureNPatch(texture, nPatchInfo, dest, origin, rotation, tint);
+        DrawTextureNPatch(this, nPatchInfo, dest, origin, rotation, tint);
     }
 
     void drawPolygon(Vector2 center, Vector2[] points, Vector2[] texcoords, Color tint = white)
     {
-        DrawTexturePoly(texture, center, points.ptr, texcoords.ptr, cast(int)points.length, tint);
+        DrawTexturePoly(this, center, points.ptr, texcoords.ptr, cast(int)points.length, tint);
+    }
+
+    int width()
+    {
+        return texture.width;
+    }
+
+    int height()
+    {
+        return texture.height;
+    }
+
+    int mipmaps()
+    {
+        return texture.mipmaps;
+    }
+
+    PixelFormat format()
+    {
+        return cast(PixelFormat)texture.format;
     }
 }
