@@ -46,7 +46,12 @@ enum Color magenta64  = {255,   0, 255,  64};
 enum Color magenta128 = {255,   0, 255, 128};
 enum Color magenta192 = {255,   0, 255, 192};
 
-enum Color brown32    = {128,  64, 0,   32};
-enum Color brown64    = {128,  64, 0,   64};
-enum Color brown128   = {128,  64, 0,  128};
-enum Color brown192   = {128,  64, 0,  192};
+enum Color brown32    = {128,  64, 0,    32};
+enum Color brown64    = {128,  64, 0,    64};
+enum Color brown128   = {128,  64, 0,   128};
+enum Color brown192   = {128,  64, 0,   192};
+
+enum Color purple32   = {128,   0, 255,  32};
+enum Color purple64   = {128,   0, 255,  64};
+enum Color purple128  = {128,   0, 255, 128};
+enum Color purple192  = {128,   0, 255, 192};
