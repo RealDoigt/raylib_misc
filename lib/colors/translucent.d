@@ -1,61 +1,52 @@
 module raylib_misc.colors.translucent;
 import raylib;
 
-// whites
-enum Color quartz         = {255, 255, 255,  32};
-enum Color diamond        = {255, 255, 255,  64};
-enum Color anglesite      = {255, 255, 255, 128};
-enum Color apophylite     = {255, 255, 255, 192};
+enum Color white32    = {255, 255, 255,  32};
+enum Color white64    = {255, 255, 255,  64};
+enum Color white128   = {255, 255, 255, 128};
+enum Color white192   = {255, 255, 255, 192};
 
-// blacks
-enum Color tourmaline     = {  0,   0,   0,  32};
-enum Color smokyQuartz    = {  0,   0,   0,  64};
-enum Color descloizite    = {  0,   0,   0, 128};
-enum Color obsidian       = {  0,   0,   0, 192};
+enum Color black32    = {  0,   0,   0,  32};
+enum Color black64    = {  0,   0,   0,  64};
+enum Color black128   = {  0,   0,   0, 128};
+enum Color black192   = {  0,   0,   0, 192};
 
-// reds
-enum Color morganite      = {255,   0,   0,  32};
-enum Color clinohumite    = {255, 255, 255,  64};
-enum Color ruby           = {255, 255, 255, 128};
-enum Color garnet         = {255, 255, 255, 192};
+enum Color red32      = {255,   0,   0,  32};
+enum Color red64      = {255, 255, 255,  64};
+enum Color red128     = {255, 255, 255, 128};
+enum Color red192     = {255, 255, 255, 192};
 
-// oranges
-enum Color sunstone       = {255, 128,   0,  32};
-enum Color carnelian      = {255, 128,   0,  64};
-enum Color topaz          = {255, 128,   0, 128};
-enum Color sylvite        = {255, 128,   0, 192};
+enum Color orange32   = {255, 128,   0,  32};
+enum Color orange64   = {255, 128,   0,  64};
+enum Color orange128  = {255, 128,   0, 128};
+enum Color orange192  = {255, 128,   0, 192};
 
-// yellows
-enum Color copal          = {255, 255,   0,  32};
-enum Color brazilianite   = {255, 255,   0,  64};
-enum Color amber          = {255, 255,   0, 128};
-enum Color goldenBeryl    = {255, 255,   0, 192};
+enum Color yellow32   = {255, 255,   0,  32};
+enum Color yellow64   = {255, 255,   0,  64};
+enum Color yellow128  = {255, 255,   0, 128};
+enum Color yellow192  = {255, 255,   0, 192};
 
-// greens
-enum Color olivine        = {  0, 255,   0,  32};
-enum Color elbaite        = {  0, 255,   0,  64};
-enum Color peridot        = {  0, 255,   0, 128};
-enum Color emerald        = {  0, 255,   0, 192};
+enum Color green32    = {  0, 255,   0,  32};
+enum Color green64    = {  0, 255,   0,  64};
+enum Color green128   = {  0, 255,   0, 128};
+enum Color green192   = {  0, 255,   0, 192};
 
-// blues
-enum Color aquamarine     = {  0,   0, 255,  32};
-enum Color celestite      = {  0,   0, 255,  64};
-enum Color sapphire       = {  0,   0, 255, 128};
-enum Color afghanite      = {  0,   0, 255, 192};
+enum Color blue32     = {  0,   0, 255,  32};
+enum Color blue64     = {  0,   0, 255,  64};
+enum Color blue128    = {  0,   0, 255, 128};
+enum Color blue192    = {  0,   0, 255, 192};
 
-// cyans
-enum Color phosphophyllite = {  0, 255, 255,  64};
-enum Color helenite        = {  0, 255, 255, 128};
-enum Color grandidierite   = {  0, 255, 255, 192};
+enum Color cyan32     = {  0, 255, 255,  32};
+enum Color cyan64     = {  0, 255, 255,  64};
+enum Color cyan128    = {  0, 255, 255, 128};
+enum Color cyan192    = {  0, 255, 255, 192};
 
-// pinks
-enum Color amethyst       = {255,   0, 255,  32};
-enum Color rhodonite      = {255,   0, 255,  64};
-enum Color padparadscha   = {255,   0, 255, 128};
-enum Color ametrine       = {255,   0, 255, 192};
+enum Color magenta32  = {255,   0, 255,  32};
+enum Color magenta64  = {255,   0, 255,  64};
+enum Color magenta128 = {255,   0, 255, 128};
+enum Color magenta192 = {255,   0, 255, 192};
 
-// browns
-enum Color eosphorite     = {128,  64, 0,   32};
-enum Color biotite        = {128,  64, 0,   64};
-enum Color brookite       = {128,  64, 0,  128};
-enum Color stolzite       = {128,  64, 0,  192};
+enum Color brown32    = {128,  64, 0,   32};
+enum Color brown64    = {128,  64, 0,   64};
+enum Color brown128   = {128,  64, 0,  128};
+enum Color brown192   = {128,  64, 0,  192};
