@@ -165,11 +165,3 @@ enum Color lightYellow          = {255, 255, 224, 255};
 // other web colors not part of basic nor extended
 enum Color transparent          = {  0,   0,   0,   0};
 enum Color rebeccaPurple        = {102,  51, 153, 255};
-
-// X11 colours with clashing or different names, per tradition, conflicting names are prefixed
-enum Color x11Gray              = {190, 190, 190, 255};
-enum Color x11Maroon            = {176,  48,  96, 255};
-enum Color x11Purple            = {160,  32, 240, 255};
-enum Color x11Green             = lime;
-enum Color magenta              = fuchsia;
-enum Color cyan                 = aqua;
