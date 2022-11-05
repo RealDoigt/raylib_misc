@@ -6,6 +6,7 @@ import raylib_misc.colors.web;
 import std.string;
 import raylib;
 
+
 class ImageNotFoundException : Exception
 {
     this(string msg = "image not found exception", string file = __FILE__, size_t line = __LINE__)
@@ -29,13 +30,13 @@ class Img
 
     this(string fileName)
     {
-        if (!fileName.ptr.FileExists) throw new ImageNotFoundException();
-        image = fileName.ptr.LoadImage;
+        if (!fileName.toStringz.FileExists) throw new ImageNotFoundException(fileName ~ " not found");
+        image = fileName.toStringz.LoadImage;
     }
 
     this(string fileName, int width, int height, PixelFormat format, int headerSize)
     {
-        if (!fileName.ptr.FileExists) throw new ImageNotFoundException();
+        //if (!fileName.toStringz.FileExists) throw new ImageNotFoundException();
         image = fileName.toStringz.LoadImageRaw(width, height, format, headerSize);
     }
 
