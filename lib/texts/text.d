@@ -15,9 +15,10 @@ class Text
     {
         this.x = x;
         this.y = y;
-        set(contents);
         this.color = color;
         this.fontSize = fontSize;
+        this.contents = contents.toStringz;
+        // code duplication above to avoid problems with virtual calls
     }
 
     void set(string newValue)
