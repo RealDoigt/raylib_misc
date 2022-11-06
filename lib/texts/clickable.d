@@ -24,7 +24,7 @@ class ClickableText : Text
         area = new Rect(position, cast(int)size.x, cast(int)size.y);
     }
 
-    // in both functions below, draw is called in case the delegates changes a visual property of the class
+    // in the functions below, draw is called in case the delegates changes a visual property of the class
 
     void onHover(void delegate() d)
     {
@@ -38,6 +38,15 @@ class ClickableText : Text
     void onClick(void delegate() d)
     {
         if (area.checkCollision(GetMousePosition) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
+        {
+            d();
+            draw;
+        }
+    }
+
+    void onExit(void delegate() d)
+    {
+        if(!area.checkCollision(GetMousePosition))
         {
             d();
             draw;
