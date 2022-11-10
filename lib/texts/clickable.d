@@ -5,7 +5,6 @@ class ClickableText : Text
     this(string contents, int x, int y, int fontSize, Color color = white)
     {
         super(contents, x, y, fontSize, color);
-        this.redirect = redirect;
         /*
             code taken from rtext.c in raylib by raysan5 because I wanted the default spacing, under the zlib license
             see https://github.com/raysan5/raylib/blob/master/LICENSE for the full license text
