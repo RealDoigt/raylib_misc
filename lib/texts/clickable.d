@@ -1,12 +1,8 @@
 class ClickableText : Text
 {
-    private
-    {
-        Screens redirect;
-        Rect area;
-    }
+    private Rect area;
 
-    this(Screens redirect, string contents, int x, int y, int fontSize, Color color = white)
+    this(string contents, int x, int y, int fontSize, Color color = white)
     {
         super(contents, x, y, fontSize, color);
         this.redirect = redirect;
