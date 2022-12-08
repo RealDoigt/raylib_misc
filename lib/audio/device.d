@@ -21,6 +21,7 @@ class AudioDevice
 
     void close()
     {
+        CloseAudioDevice;
         this = null;
     }
 
