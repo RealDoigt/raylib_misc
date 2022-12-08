@@ -52,4 +52,20 @@ class WaveSnd
     {
         WaveFormat(&this, sampleRate, sampleSize, channels);
     }
+
+    auto loadSamples()
+    {
+        float[] result;
+
+        auto size = wave.frameCount * wave.channels;
+
+        switch (wave.sampleSize)
+        {
+            case 8: break;
+            case 16: break;
+            case 32: break;
+        }
+
+        return result;
+    }
 }
