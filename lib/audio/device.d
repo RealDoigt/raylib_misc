@@ -13,7 +13,7 @@ class AudioDevice
         }
     }
 
-    static auto getInstance()
+    static getInstance()
     {
         if (instance is null) instance = new AudioDevice();
         return instance;
