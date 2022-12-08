@@ -71,6 +71,16 @@ class Audio : IAudio
         SetAudioStreamCallback(this, callback);
     }
 
+    void attachProcessor(AudioCallback processor)
+    {
+        AttachAudioStreamProcessor(this, processor);
+    }
+
+    void detachProcessor(AudioCallback processor)
+    {
+        DetachAudioStreamProcessor(this, processor);
+    }
+
     static setBufferSizeDefault(int size)
     {
         size.SetAudioStreamBufferSizeDefault;
