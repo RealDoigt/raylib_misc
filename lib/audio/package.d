@@ -7,4 +7,5 @@ public
     import raylib_misc.audio.iaudio;
     import raylib_misc.audio.music;
     import raylib_misc.audio.sound;
+    import raylib_misc.audio.wave;
 }
