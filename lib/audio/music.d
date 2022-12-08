@@ -63,4 +63,13 @@ class MusicStream : IAudio
         StopMusicStream(this);
     }
 
+    void update(Music m)
+    {
+        UpdateMusicStream(this, m);
+    }
+
+    void update(MusicStream ms)
+    {
+        UpdateMusicStream(this, ms);
+    }
 }
