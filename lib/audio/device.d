@@ -34,4 +34,14 @@ class AudioDevice
     {
         volume.SetMasterVolume;
     }
+
+    void stopMultichannel()
+    {
+        StopSoundMulti;
+    }
+
+    int getSoundsPlaying()
+    {
+        return GetSoundsPlaying;
+    }
 }
