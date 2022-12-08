@@ -25,4 +25,37 @@ class Audio : IAudio
     {
         return IsAudioStreamProcessed(this);
     }
+
+    override void setVolume(float volume)
+    {
+
+    }
+    override void setPitch(float pitch)
+    {
+
+    }
+    override void setPan(float pan)
+    {
+
+    }
+    override bool isPlaying()
+    {
+
+    }
+    override void resume()
+    {
+
+    }
+    override void pause()
+    {
+
+    }
+    override void play()
+    {
+
+    }
+    override void stop()
+    {
+
+    }
 }
