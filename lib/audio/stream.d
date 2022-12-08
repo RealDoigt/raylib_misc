@@ -81,7 +81,7 @@ class Audio : IAudio
         DetachAudioStreamProcessor(this, processor);
     }
 
-    static setBufferSizeDefault(int size)
+    static void setBufferSizeDefault(int size)
     {
         size.SetAudioStreamBufferSizeDefault;
     }
