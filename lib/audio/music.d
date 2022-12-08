@@ -17,4 +17,9 @@ class MusicStream : IAudio
     {
         music = fileType.toStringz.LoadMusicStreamFromMemory(data, dataSize);
     }
+
+    ~this()
+    {
+        music.UnloadMusicStream;
+    }
 }
