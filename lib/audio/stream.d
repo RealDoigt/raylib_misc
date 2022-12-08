@@ -66,6 +66,11 @@ class Audio : IAudio
         StopAudioStream(this);
     }
 
+    void setCallback(AudioCallback callback)
+    {
+        SetAudioStreamCallback(this, callback);
+    }
+
     static setBufferSizeDefault(int size)
     {
         size.SetAudioStreamBufferSizeDefault;
