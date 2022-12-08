@@ -22,4 +22,45 @@ class MusicStream : IAudio
     {
         music.UnloadMusicStream;
     }
+
+    override void setVolume(float volume)
+    {
+        SetMusicVolume(this, volume);
+    }
+
+    override void setPitch(float pitch)
+    {
+        SetMusicPitch(this, pitch);
+    }
+
+    override void setPan(float pan)
+    {
+        SetMusicPan(this, pan);
+    }
+
+    override bool isPlaying()
+    {
+        return IsMusicStreamPlaying(this);
+    }
+
+    override void resume()
+    {
+        ResumeMusicStream(this);
+    }
+
+    override void pause()
+    {
+        PauseMusicStream(this);
+    }
+
+    override void play()
+    {
+        PlayMusicStream(this);
+    }
+
+    override void stop()
+    {
+        StopMusicStream(this);
+    }
+
 }
