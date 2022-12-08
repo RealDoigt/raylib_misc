@@ -28,34 +28,41 @@ class Audio : IAudio
 
     override void setVolume(float volume)
     {
-
+        SetAudioStreamVolume(this, volume);
     }
+
     override void setPitch(float pitch)
     {
-
+        SetAudioStreamPitch(this, pitch);
     }
+
     override void setPan(float pan)
     {
-
+        SetAudioStreamPan(this, pan);
     }
+
     override bool isPlaying()
     {
-
+        return IsAudioStreamPlaying(this);
     }
+
     override void resume()
     {
-
+        ResumeAudioStream(this);
     }
+
     override void pause()
     {
-
+        PauseAudioStream(this);
     }
+
     override void play()
     {
-
+        PlayAudioStream(this);
     }
+
     override void stop()
     {
-
+        StopAudioStream(this);
     }
 }
