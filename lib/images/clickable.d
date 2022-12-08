@@ -30,13 +30,10 @@ class ClickableImage : Rect
     }
 
     // call this after calling onHover(), not before
-    void onClick(void delegate() d)
+    void onClick()
     {
         if (MOUSE_LEFT_BUTTON.IsMouseButtonPressed && checkCollision(GetMousePosition))
-        {
             texture.update(activeImage);
-            d();
-        }
     }
 
     void onHover()
