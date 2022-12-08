@@ -42,4 +42,9 @@ class WaveSnd
     {
         return ExportWaveAsCode(this, fileName.toStringz);
     }
+
+    void crop(int initSample, int finalSample)
+    {
+        WaveCrop(&this, initSample, finalSample);
+    }
 }
