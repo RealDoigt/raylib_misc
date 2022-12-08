@@ -77,4 +77,14 @@ class MusicStream : IAudio
     {
         SeekMusicStream(this, position);
     }
+
+    auto getTimeLength()
+    {
+        return GetMusicTimeLength(this);
+    }
+
+    auto getTimePlayed()
+    {
+        return GetMusicTimePlayed(this);
+    }
 }
