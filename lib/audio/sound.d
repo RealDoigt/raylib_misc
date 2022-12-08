@@ -27,4 +27,19 @@ class Snd : IAudio
     {
         sound.UnloadSound;
     }
+
+    void playMultichannel()
+    {
+        PlaySoundMulti(this);
+    }
+
+    static void stopMultichannel()
+    {
+        StopSoundMulti;
+    }
+
+    static int getSoundsPlaying()
+    {
+        return GetSoundsPlaying;
+    }
 }
