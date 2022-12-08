@@ -72,4 +72,9 @@ class MusicStream : IAudio
     {
         UpdateMusicStream(this, ms);
     }
+
+    void seek(float position)
+    {
+        SeekMusicStream(this, position);
+    }
 }
