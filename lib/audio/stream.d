@@ -10,4 +10,9 @@ class Audio : IAudio
     {
         stream = LoadAudioStream(sampleRate, sampleSize, channels);
     }
+
+    ~this()
+    {
+        stream.UnloadAudioStream;
+    }
 }
