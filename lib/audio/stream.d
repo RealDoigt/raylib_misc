@@ -65,4 +65,9 @@ class Audio : IAudio
     {
         StopAudioStream(this);
     }
+
+    static setBufferSizeDefault(int size)
+    {
+        size.SetAudioStreamBufferSizeDefault;
+    }
 }
