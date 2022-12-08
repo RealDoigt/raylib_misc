@@ -47,4 +47,9 @@ class WaveSnd
     {
         WaveCrop(&this, initSample, finalSample);
     }
+
+    void format(int sampleRate, int sampleSize, int channels)
+    {
+        WaveFormat(&this, sampleRate, sampleSize, channels);
+    }
 }
