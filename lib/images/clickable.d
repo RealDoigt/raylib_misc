@@ -1,4 +1,4 @@
-module images.clickable;
+module raylib_misc.images.clickable;
 import images;
 
 class ClickableImage : Rect
