@@ -33,6 +33,46 @@ class Snd : IAudio
         PlaySoundMulti(this);
     }
 
+    override void setVolume(float volume)
+    {
+        SetSoundVolume(this, volume);
+    }
+
+    override void setPitch(float pitch)
+    {
+        SetSoundPitch(this, pitch);
+    }
+
+    override void setPan(float pan)
+    {
+        SetSoundPan(this, pan);
+    }
+
+    override bool isPlaying()
+    {
+        return IsSoundPlaying(this);
+    }
+
+    override void resume()
+    {
+        ResumeSound(this);
+    }
+
+    override void pause()
+    {
+        PauseSound(this);
+    }
+
+    override void play()
+    {
+        PlaySound(this);
+    }
+
+    override void stop()
+    {
+        StopSound(this);
+    }
+
     static void stopMultichannel()
     {
         StopSoundMulti;
