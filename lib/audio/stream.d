@@ -1,4 +1,5 @@
 module raylib_misc.audio.stream;
+import raylib_misc;
 import raylib;
 
 class Audio : IAudio
