@@ -15,4 +15,14 @@ class Audio : IAudio
     {
         stream.UnloadAudioStream;
     }
+
+    void update(const void* data, int frameCount)
+    {
+        UpdateAudioStream(this, data, frameCount);
+    }
+
+    auto isProcessed()
+    {
+        return IsAudioStreamProcessed(this);
+    }
 }
