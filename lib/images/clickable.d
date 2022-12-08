@@ -9,6 +9,19 @@ class ClickableImage : Rect
         Tx2d texture;
     }
 
+    protected
+    {
+        auto isClicked()
+        {
+            return MOUSE_LEFT_BUTTON.IsMouseButtonPressed && checkCollision(GetMousePosition);
+        }
+
+        auto isHovered()
+        {
+            return checkCollision(GetMousePosition);
+        }
+    }
+
     this(int x, int y, string imagePath, string hoverImagePath, string activeImagePath)
     {
         super(x, y, 0, 0, transparent);
@@ -32,20 +45,17 @@ class ClickableImage : Rect
     // call this after calling onHover(), not before
     void onClick()
     {
-        if (MOUSE_LEFT_BUTTON.IsMouseButtonPressed && checkCollision(GetMousePosition))
-            texture.update(activeImage);
+        if (isClicked) texture.update(activeImage);
     }
 
     void onHover()
     {
-        if (checkCollision(GetMousePosition))
-            texture.update(hoverImage);
+        if (isHovered) texture.update(hoverImage);
     }
 
     void onExit()
     {
-        if (!checkCollision(GetMousePosition))
-            texture.update(normalImage);
+        if (!isHovered) texture.update(normalImage);
     }
 
     override void draw()
