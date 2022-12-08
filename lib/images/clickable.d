@@ -20,6 +20,21 @@ class ClickableImage : Rect
         {
             return checkCollision(GetMousePosition);
         }
+
+        void setActiveImage()
+        {
+            texture.update(activeImage);
+        }
+
+        void setHoverImage()
+        {
+            texture.update(hoverImage);
+        }
+
+        void setNormalImage()
+        {
+            texture.update(normalImage);
+        }
     }
 
     this(int x, int y, string imagePath, string hoverImagePath, string activeImagePath)
@@ -45,17 +60,17 @@ class ClickableImage : Rect
     // call this after calling onHover(), not before
     void onClick()
     {
-        if (isClicked) texture.update(activeImage);
+        if (isClicked) setActiveImage;
     }
 
     void onHover()
     {
-        if (isHovered) texture.update(hoverImage);
+        if (isHovered) setHoverImage;
     }
 
     void onExit()
     {
-        if (!isHovered) texture.update(normalImage);
+        if (!isHovered) setNormalImage;
     }
 
     override void draw()
