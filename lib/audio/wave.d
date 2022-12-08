@@ -31,4 +31,15 @@ class WaveSnd
     {
         wave.UnloadWave;
     }
+
+    // export is a reserved keyword in D
+    auto save(string fileName)
+    {
+        return ExportWave(this, fileName.toStringz);
+    }
+
+    auto exportAsCode(string fileName)
+    {
+        return ExportWaveAsCode(this, fileName.toStringz);
+    }
 }
