@@ -1,5 +1,6 @@
-module images.clickable;
-import images;
+module raylib_misc.images.clickable;
+import raylib_misc.images;
+import raylib;
 
 class ClickableImage : Rect
 {
@@ -7,6 +8,34 @@ class ClickableImage : Rect
     {
         Img normalImage, hoverImage, activeImage;
         Tx2d texture;
+    }
+
+    protected
+    {
+        auto isClicked()
+        {
+            return MOUSE_LEFT_BUTTON.IsMouseButtonPressed && checkCollision(GetMousePosition);
+        }
+
+        auto isHovered()
+        {
+            return checkCollision(GetMousePosition);
+        }
+
+        void setActiveImage()
+        {
+            texture.update(activeImage);
+        }
+
+        void setHoverImage()
+        {
+            texture.update(hoverImage);
+        }
+
+        void setNormalImage()
+        {
+            texture.update(normalImage);
+        }
     }
 
     this(int x, int y, string imagePath, string hoverImagePath, string activeImagePath)
@@ -29,26 +58,25 @@ class ClickableImage : Rect
             activeImage.resize(width, height);
     }
 
-    // call this after calling onHover(), not before
-    void onClick(void delegate() d)
+    this(Vector xy, string imagePath, string hoverImagePath, string activeImagePath)
     {
-        if (MOUSE_LEFT_BUTTON.IsMouseButtonPressed && checkCollision(GetMousePosition))
-        {
-            texture.update(activeImage);
-            d();
-        }
+        this(cast(int)position.x, cast(int)position.y, imagePath, hoverImagePath, activeImagePath);
+    }
+
+    // call this after calling onHover(), not before
+    void onClick()
+    {
+        if (isClicked) setActiveImage;
     }
 
     void onHover()
     {
-        if (checkCollision(GetMousePosition))
-            texture.update(hoverImage);
+        if (isHovered) setHoverImage;
     }
 
     void onExit()
     {
-        if (!checkCollision(GetMousePosition))
-            texture.update(normalImage);
+        if (!isHovered) setNormalImage;
     }
 
     override void draw()
