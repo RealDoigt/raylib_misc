@@ -1,6 +1,7 @@
 module raylib_misc.ui.rectcut;
 import raylib_misc.shapes.rectangle;
 import raylib_misc.colors.web;
+import std.algorithm;
 
 class RectCut : Rect
 {
@@ -22,28 +23,16 @@ class RectCut : Rect
         super(x, y, width, height, color);
     }
     
+    auto cutLeft(int toCut)
+    {
+        int originalX = x;
+        x = min(maxX, x + toCut);
+        return new RectCut(originalX, y, x, maxY);
+    }
     /*
-    auto cut(float a, Side side)
+    auto cutRight(int a)
     {
-        switch(side)
-        {
-            case Side.right: return cutRight(a);
-            case Side.left:  return cutLeft(a);
-            case Side.top:   return cutTop(a);
-            default:         return cutBottom(a);
-        }
-    }
-    
-    auto cutLeft(float a)
-    {
-        float originalX = minX;
-        minX = min(maxX, minX + a);
-        return RectCut(originalX, minY, minX, maxY);
-    }
-    
-    auto cutRight(float a)
-    {
-        float originalX = maxX;
+        int originalX = maxX;
         maxX = max(minX, maxX - a);
         return RectCut(maxX, minY, originalX, maxY);
     }
