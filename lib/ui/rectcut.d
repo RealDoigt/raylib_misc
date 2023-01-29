@@ -29,96 +29,97 @@ class RectCut : Rect
         x = min(maxX, x + toCut);
         return new RectCut(originalX, y, x, maxY);
     }
-    /*
-    auto cutRight(int a)
+    
+    auto cutRight(int toCut)
     {
         int originalX = maxX;
-        maxX = max(minX, maxX - a);
+        maxX = max(minX, maxX - toCut);
         return RectCut(maxX, minY, originalX, maxY);
     }
     
-    auto cutTop(float a)
+    /*
+    auto cutTop(int toCut)
     {
-        float originalY = minY;
-        minY = min(maxX, minY + a);
+        int originalY = minY;
+        minY = min(maxX, minY + toCut);
         return RectCut(minX, originalY, maxX, minY);
     }
     
-    auto cutBottom(float a)
+    auto cutBottom(int toCut)
     {
-        float originalY = maxY;
-        maxY = max(minY, maxY - a);
+        int originalY = maxY;
+        maxY = max(minY, maxY - toCut);
         return RectCut(minX, maxY, maxX, originalY);
     }
     
-    auto getLeft(float a)
+    auto getLeft(int toCut)
     {
-        float newX = min(maxX, minX + a);
+        int newX = min(maxX, minX + toCut);
         return RectCut(minX, minY, newX, maxY);
     }
     
-    auto getRight(float a)
+    auto getRight(int toCut)
     {
-        float newX = max(minX, maxX - a);
+        int newX = max(minX, maxX - toCut);
         return RectCut(newX, minY, maxX, maxY);
     }
     
-    auto getTop(float a)
+    auto getTop(int toCut)
     {
-        float newY = min(maxX, minY + a);
+        int newY = min(maxX, minY + toCut);
         return RectCut(minX, minY, maxX, newY);
     }
     
-    auto getBottom(float a)
+    auto getBottom(int toCut)
     {
-        float newY = max(minY, maxY - a);
+        int newY = max(minY, maxY - toCut);
         return RectCut(minX, newY, maxX, maxY);
     }
     
-    auto addLeft(float a)
+    auto addLeft(int toCut)
     {
-        return RectCut(minX - a, minY, maxX, maxY);
+        return RectCut(minX - toCut, minY, maxX, maxY);
     }
     
-    auto addRight(float a)
+    auto addRight(int toCut)
     {
-        return RectCut(minX, minY, maxX + a, maxY);
+        return RectCut(minX, minY, maxX + toCut, maxY);
     }
     
-    auto addTop(float a)
+    auto addTop(int toCut)
     {
-        return RectCut(minX, minY - a, maxX, maxY);
+        return RectCut(minX, minY - toCut, maxX, maxY);
     }
     
-    auto addBottom(float a)
+    auto addBottom(int toCut)
     {
-        return RectCut(minX, minY, maxX, maxY + a);
+        return RectCut(minX, minY, maxX, maxY + toCut);
     }
     
-    auto extend(float a)
+    auto extend(int toCut)
     {
-        return RectCut(minX - a, minY - a, maxX + a, maxY + a);
+        return RectCut(minX - toCut, minY - toCut, maxX + toCut, maxY + toCut);
     }
     
-    auto contract(float a)
+    auto contract(int toCut)
     {
-        return RectCut(minX + a, minY + a, maxX - a, maxY - a);
+        return RectCut(minX + toCut, minY + toCut, maxX - toCut, maxY - toCut);
     }
     
-    void selfExtend(float a)
+    void selfExtend(int toCut)
     {
-        minX -= a; 
-        minY -= a; 
-        maxX += a; 
-        maxY += a;
+        minX -= toCut; 
+        minY -= toCut; 
+        maxX += toCut; 
+        maxY += toCut;
     }
     
-    void selfcontract(float a)
+    void selfcontract(int toCut)
     {
-        minX += a; 
-        minY += a; 
-        maxX -= a; 
-        maxY -= a;
+        minX += toCut; 
+        minY += toCut; 
+        maxX -= toCut; 
+        maxY -= toCut;
     }
     */
 }
