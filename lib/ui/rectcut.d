@@ -33,8 +33,8 @@ class RectCut : Rect
     auto cutRight(int toCut)
     {
         int originalX = maxX;
-        maxX = max(minX, maxX - toCut);
-        return RectCut(maxX, minY, originalX, maxY);
+        width = max(x, maxX - toCut) - x;
+        return RectCut(maxX, y, originalX, maxY);
     }
     
     /*
