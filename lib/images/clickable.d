@@ -58,7 +58,7 @@ class ClickableImage : Rect
             activeImage.resize(width, height);
     }
 
-    this(Vector xy, string imagePath, string hoverImagePath, string activeImagePath)
+    this(Vector2 xy, string imagePath, string hoverImagePath, string activeImagePath)
     {
         this(cast(int)position.x, cast(int)position.y, imagePath, hoverImagePath, activeImagePath);
     }
