@@ -2,7 +2,7 @@ module raylib_misc.images.clickable_delegate;
 import raylib_misc.images;
 import raylib;
 
-class ClickableImageDelegate : ClickableImageDelegate
+class ClickableImageDelegate : ClickableImage
 {
     private void delegate() clickAction;
 
