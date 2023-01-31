@@ -1,6 +1,5 @@
 module raylib_misc.texts.clickable;
-import raylib_misc.texts;
-import raylib_misc.shapes;
+import raylib_misc;
 import raylib;
 
 class ClickableText : Text
