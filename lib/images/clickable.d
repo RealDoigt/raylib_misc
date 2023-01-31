@@ -1,5 +1,5 @@
 module raylib_misc.images.clickable;
-import raylib_misc.images;
+import raylib_misc;
 import raylib;
 
 class ClickableImage : Rect
@@ -58,9 +58,9 @@ class ClickableImage : Rect
             activeImage.resize(width, height);
     }
 
-    this(Vector xy, string imagePath, string hoverImagePath, string activeImagePath)
+    this(Vector2 xy, string imagePath, string hoverImagePath, string activeImagePath)
     {
-        this(cast(int)position.x, cast(int)position.y, imagePath, hoverImagePath, activeImagePath);
+        this(cast(int)xy.x, cast(int)xy.y, imagePath, hoverImagePath, activeImagePath);
     }
 
     // call this after calling onHover(), not before
