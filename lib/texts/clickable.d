@@ -1,8 +1,3 @@
-module raylib_misc.texts.clickable;
-import raylib_misc;
-import raylib_misc.colors.web;
-import raylib;
-
 class ClickableText : Text
 {
     private Rect area;
