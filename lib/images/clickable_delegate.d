@@ -14,7 +14,7 @@ class ClickableImageDelegate : ClickableImage
 
     this(Vector2 xy, string imagePath, string hoverImagePath, string activeImagePath, void delegate() clickAction)
     {
-        this(cast(int)position.x, cast(int)position.y, imagePath, hoverImagePath, activeImagePath, clickAction);
+        this(cast(int)xy.x, cast(int)xy.y, imagePath, hoverImagePath, activeImagePath, clickAction);
     }
 
     override void onClick()
