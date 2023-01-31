@@ -2,7 +2,7 @@ module raylib_misc.images.clickable_delegate;
 import raylib_misc.images;
 import raylib;
 
-class ClickableImageDelegate : ClickableImage
+class ClickableImageDelegate : ClickableImageDelegate
 {
     private void delegate() clickAction;
 
@@ -12,9 +12,9 @@ class ClickableImageDelegate : ClickableImage
         this.clickAction = clickAction;
     }
 
-    this(Vector2 xy, string imagePath, string hoverImagePath, string activeImagePath, void delegate() clickAction)
+    this(Vector xy, string imagePath, string hoverImagePath, string activeImagePath, void delegate() clickAction)
     {
-        this(cast(int)xy.x, cast(int)xy.y, imagePath, hoverImagePath, activeImagePath, clickAction);
+        this(cast(int)position.x, cast(int)position.y, imagePath, hoverImagePath, activeImagePath, clickAction);
     }
 
     override void onClick()
