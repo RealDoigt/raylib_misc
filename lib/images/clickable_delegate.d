@@ -12,7 +12,7 @@ class ClickableImageDelegate : ClickableImage
         this.clickAction = clickAction;
     }
 
-    this(Vector xy, string imagePath, string hoverImagePath, string activeImagePath, void delegate() clickAction)
+    this(Vector2 xy, string imagePath, string hoverImagePath, string activeImagePath, void delegate() clickAction)
     {
         this(cast(int)position.x, cast(int)position.y, imagePath, hoverImagePath, activeImagePath, clickAction);
     }
