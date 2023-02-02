@@ -22,7 +22,7 @@ class AudioDevice
     void close()
     {
         CloseAudioDevice;
-        this = null;
+        instance = null;
     }
 
     auto isReady()
