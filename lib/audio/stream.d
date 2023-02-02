@@ -67,17 +67,17 @@ class Audio : IAudio
         StopAudioStream(this);
     }
 
-    void setCallback(AudioCallback callback)
+    void setCallback(raylib.AudioCallback callback)
     {
         SetAudioStreamCallback(this, callback);
     }
 
-    void attachProcessor(AudioCallback processor)
+    void attachProcessor(raylib.AudioCallback processor)
     {
         AttachAudioStreamProcessor(this, processor);
     }
 
-    void detachProcessor(AudioCallback processor)
+    void detachProcessor(raylib.AudioCallback processor)
     {
         DetachAudioStreamProcessor(this, processor);
     }
