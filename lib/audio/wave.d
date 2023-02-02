@@ -1,4 +1,4 @@
-module raylib_misc.audio.sound;
+module raylib_misc.audio.wave;
 import raylib_misc;
 import std.string;
 
