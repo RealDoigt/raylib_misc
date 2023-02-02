@@ -1,6 +1,7 @@
 module raylib_misc.audio.wave;
 import raylib_misc;
 import std.string;
+import raylib;
 
 class WaveSnd
 {
