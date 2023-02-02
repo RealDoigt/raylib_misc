@@ -4,7 +4,7 @@ import std.string;
 
 class WaveSnd
 {
-    package(raylib_misc.audio) Wave wave;
+    package Wave wave;
     alias wave this;
 
     this(string fileName)
