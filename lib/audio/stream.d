@@ -66,22 +66,7 @@ class Audio : IAudio
     {
         StopAudioStream(this);
     }
-/* TODO: when callbacks are added to the dependency
-    void setCallback(AudioCallback callback)
-    {
-        SetAudioStreamCallback(this, callback);
-    }
-
-    void attachProcessor(AudioCallback processor)
-    {
-        AttachAudioStreamProcessor(this, processor);
-    }
-
-    void detachProcessor(AudioCallback processor)
-    {
-        DetachAudioStreamProcessor(this, processor);
-    }
-*/
+    
     static void setBufferSizeDefault(int size)
     {
         size.SetAudioStreamBufferSizeDefault;
