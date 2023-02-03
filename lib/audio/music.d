@@ -33,11 +33,6 @@ class MusicStream : IAudio
         SetMusicPitch(this, pitch);
     }
 
-    override void setPan(float pan)
-    {
-        SetMusicPan(this, pan);
-    }
-
     override bool isPlaying()
     {
         return IsMusicStreamPlaying(this);
@@ -63,16 +58,11 @@ class MusicStream : IAudio
         StopMusicStream(this);
     }
 
-    void update(Music m)
+    void updateStream()
     {
-        UpdateMusicStream(this, m);
+        UpdateMusicStream(this);
     }
-
-    void update(MusicStream ms)
-    {
-        UpdateMusicStream(this, ms);
-    }
-
+    
     void seek(float position)
     {
         SeekMusicStream(this, position);
