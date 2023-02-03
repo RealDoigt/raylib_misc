@@ -13,7 +13,7 @@ class MusicStream : IAudio
         music = fileName.toStringz.LoadMusicStream;
     }
 
-    this(string fileType, const ubyte* data, int dataSize)
+    this(string fileType, ubyte* data, int dataSize)
     {
         music = fileType.toStringz.LoadMusicStreamFromMemory(data, dataSize);
     }
