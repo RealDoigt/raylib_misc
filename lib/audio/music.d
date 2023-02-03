@@ -3,6 +3,8 @@ import raylib_misc;
 import std.string;
 import raylib;
 
+class NotImplementedException : Exception { this() { super("Not implemented exception", __FILE__, __LINE__); } }
+
 class MusicStream : IAudio
 {
     private Music music;
@@ -56,6 +58,11 @@ class MusicStream : IAudio
     override void stop()
     {
         StopMusicStream(this);
+    }
+    
+    void setPan(float pan)
+    {
+        throw new NotImplementedException();
     }
 
     void updateStream()
