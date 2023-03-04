@@ -64,33 +64,32 @@ class WaveSnd
         switch (wave.sampleSize)
         {
             case 8:
-            {
+            
                 auto data = cast(ubyte*)wave.data;
 
                 for (size_t i; i < size; ++i)
                     result[i] = cast(float)(data[i] - 127) / 256;
                     
                 break;
-            }
 
             case 16:
-            {
+            
                 auto data = cast(short*)wave.data;
 
                 for (size_t i; i < size; ++i)
                     result[i] = cast(float)data[i] / 32_767;
                 
                 break;
-            }
             
             // 32
             default:
-            {
+            
                 auto data = cast(float*)wave.data;
 
                 for (size_t i; i < size; ++i)
                     result[i] = data[i];
-            }
+                    
+                break;
         }
 
         return result;
