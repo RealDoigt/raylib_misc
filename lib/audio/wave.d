@@ -64,25 +64,25 @@ class WaveSnd
         switch (wave.sampleSize)
         {
             case 8:
-                const waveData = cast(ubyte*)wave.data;
+                auto data = cast(ubyte*)wave.data;
 
                 for (size_t i; i < size; ++i)
-                    result[i] = cast(float)(waveData[i] - 127) / 256;
+                    result[i] = cast(float)(data[i] - 127) / 256;
                     break;
 
             case 16: break;
-                const waveData = cast(short*)wave.data;
+                auto data = cast(short*)wave.data;
 
                 for (size_t i; i < size; ++i)
-                    result[i] = cast(float)waveData[i] / 32_767;
+                    result[i] = cast(float)data[i] / 32_767;
                     break;
 
             // 32
             default:
-                const waveData = cast(float*)waveDave.data;
+                auto data = cast(float*)wave.data;
 
                 for (size_t i; i < size; ++i)
-                    result[i] = waveData[i];
+                    result[i] = data[i];
         }
 
         return result;
