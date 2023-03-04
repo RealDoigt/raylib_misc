@@ -68,14 +68,16 @@ class WaveSnd
 
                 for (size_t i; i < size; ++i)
                     result[i] = cast(float)(data[i] - 127) / 256;
-                    break;
+                
+                break;
 
-            case 16: break;
+            case 16:
                 auto data = cast(short*)wave.data;
 
                 for (size_t i; i < size; ++i)
                     result[i] = cast(float)data[i] / 32_767;
-                    break;
+                
+                break;
 
             // 32
             default:
