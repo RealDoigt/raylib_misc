@@ -46,12 +46,12 @@ class WaveSnd
 
     void crop(int initSample, int finalSample)
     {
-        WaveCrop(&this, initSample, finalSample);
+        WaveCrop(&wave, initSample, finalSample);
     }
 
     void format(int sampleRate, int sampleSize, int channels)
     {
-        WaveFormat(&this, sampleRate, sampleSize, channels);
+        WaveFormat(&wave, sampleRate, sampleSize, channels);
     }
 
     // was reimplemented because I like .length
