@@ -1,7 +1,7 @@
 module raylib_misc.audio.device;
 import raylib;
 
-class AudioDevice
+__gshared class AudioDevice
 {
     private
     {
