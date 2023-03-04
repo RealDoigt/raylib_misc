@@ -10,7 +10,7 @@ class Snd : IAudio
 
     this(string fileName)
     {
-        sound = fileName.toStringz.LoadWave;
+        sound = fileName.toStringz.LoadSound;
     }
 
     this(Wave w)
