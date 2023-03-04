@@ -37,11 +37,6 @@ class Audio : IAudio
         SetAudioStreamPitch(this, pitch);
     }
 
-    override void setPan(float pan)
-    {
-        SetAudioStreamPan(this, pan);
-    }
-
     override bool isPlaying()
     {
         return IsAudioStreamPlaying(this);
