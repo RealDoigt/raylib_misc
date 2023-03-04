@@ -43,11 +43,6 @@ class Snd : IAudio
         SetSoundPitch(this, pitch);
     }
 
-    override void setPan(float pan)
-    {
-        SetSoundPan(this, pan);
-    }
-
     override bool isPlaying()
     {
         return IsSoundPlaying(this);
