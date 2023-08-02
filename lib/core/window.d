@@ -3,10 +3,18 @@ import raylib;
 
 class Window
 {
-    private this(int width, int height, const char* title)
+    private 
     {
-        InitWindow(width, height, title);
+        static Window window;
+        
+        this(int width, int height, const char* title)
+        {
+            InitWindow(width, height, title);
+        }
     }
     
-    
+    ~this()
+    {
+        CloseWindow;
+    }
 }
