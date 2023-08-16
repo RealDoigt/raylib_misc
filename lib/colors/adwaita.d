@@ -38,11 +38,11 @@ enum Color purple3 = {145,  65, 172, 255};
 enum Color purple4 = {129,  61, 156, 255};
 enum Color purple5 = { 97,  53, 131, 255};
 
-enum Color brown1  = {, 255};
-enum Color brown2  = {, 255};
-enum Color brown3  = {, 255};
-enum Color brown4  = {, 255};
-enum Color brown5  = {, 255};
+enum Color brown1  = {205, 171, 143, 255};
+enum Color brown2  = {181, 131,  90, 255};
+enum Color brown3  = {152, 106,  68, 255};
+enum Color brown4  = {134,  94,  60, 255};
+enum Color brown5  = { 99,  69,  44, 255};
 
 enum Color light1  = {, 255};
 enum Color light2  = {, 255};
