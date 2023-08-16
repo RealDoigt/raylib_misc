@@ -57,6 +57,10 @@ alias popoverBGDark  = thumbnailBGDark;
 alias popoverFGLight = windowFGLight;
 alias popoverFGDark  = light1;
 
+// Helper Colours
+enum Color regular(Color c)      = {c.r, c.g, c.b,  38};
+enum Color highContrast(Color c) = {c.r, c.g, c.b, 128};
+
 // Accent Colours
 enum Color accentLight   = { 28, 113, 216, 255};
 enum Color accentDark    = {120, 174, 237, 255};
