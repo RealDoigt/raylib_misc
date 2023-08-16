@@ -5,13 +5,25 @@ import raylib;
 enum Color windowBGLight = {250, 250, 250, 255};
 enum Color windowBGDark  = { 36,  36,  36, 255};
 enum Color windowFGLight = {  0,   0,   0, 204};
-alias windowFGDark = light1;
+alias windowFGDark       = light1;
 
 // View Colours
-alias viewBGLight = light1;
+alias viewBGLight     = light1;
 enum Color viewBGDark = { 30,  30,  30, 255};
-alias viewFGLight = windowFGLight;
-alias viewFGDark  = light1;
+alias viewFGLight     = windowFGLight;
+alias viewFGDark      = light1;
+
+// Headerbar Colours
+enum Color headerbarBGLight    = {235, 235, 235, 255};
+enum Color headerbarBGDark     = { 48,  48,  48, 255};
+alias headerbarFGLight         = windowFGLight;
+alias headerbarFGDark          = light1;
+alias headerbarBorderLight     = windowFGLight;
+alias headerbarBorderDark      = light1;
+alias headerbarBackdropLight   = windowBGLight;
+alias headerbarBackdropDark    = windowBGDark;
+enum Color headerbarShadeLight = {  0,   0,   0,  18};
+enum Color headerbarShadeDark  = {  0,   0,   0,  92};
 
 // Accent Colours
 enum Color accentLight   = { 28, 113, 216, 255};
