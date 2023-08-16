@@ -31,27 +31,30 @@ enum Color red2    = {237,  51,  59, 255};
 enum Color red3    = {224,  27,  36, 255};
 enum Color red4    = {192,  28,  40, 255};
 enum Color red5    = {165,  29,  45, 255};
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
+
+enum Color purple1 = {220, 138, 221, 255};
+enum Color purple2 = {192,  97, 203, 255};
+enum Color purple3 = {145,  65, 172, 255};
+enum Color purple4 = {129,  61, 156, 255};
+enum Color purple5 = { 97,  53, 131, 255};
+
+enum Color brown1  = {, 255};
+enum Color brown2  = {, 255};
+enum Color brown3  = {, 255};
+enum Color brown4  = {, 255};
+enum Color brown5  = {, 255};
+
+enum Color light1  = {, 255};
+enum Color light2  = {, 255};
+enum Color light3  = {, 255};
+enum Color light4  = {, 255};
+enum Color light5  = {, 255};
+
+enum Color dark1   = {, 255};
+enum Color dark2   = {, 255};
+enum Color dark3   = {, 255};
+enum Color dark4   = {, 255};
+enum Color dark5   = {, 255};
 
 // Miscellaneous Colors
 enum Color shadeLight           = {  0,   0,   0,  18};
