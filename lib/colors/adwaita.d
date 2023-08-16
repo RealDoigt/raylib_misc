@@ -50,11 +50,11 @@ enum Color light3  = {222, 221, 218, 255};
 enum Color light4  = {192, 191, 188, 255};
 enum Color light5  = {154, 153, 150, 255};
 
-enum Color dark1   = {, 255};
-enum Color dark2   = {, 255};
-enum Color dark3   = {, 255};
-enum Color dark4   = {, 255};
-enum Color dark5   = {, 255};
+enum Color dark1   = {119, 118, 123, 255};
+enum Color dark2   = { 94,  92, 100, 255};
+enum Color dark3   = { 61,  56,  70, 255};
+enum Color dark4   = { 36,  31,  49, 255};
+enum Color dark5   = {  0,   0,   0, 255};
 
 // Miscellaneous Colors
 enum Color shadeLight           = {  0,   0,   0,  18};
