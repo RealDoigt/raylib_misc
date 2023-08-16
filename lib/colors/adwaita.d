@@ -1,6 +1,12 @@
 module raylib_misc.colors.adwaita;
 import raylib;
 
+// Miscellaneous Colors
+enum Color shadeLight           = {  0,   0,   0,  18};
+enum Color shadeDark            = {  0,   0,   0,  92};
+alias scrollbarOutlineLight     = light1;
+enum Color scrollbarOutlineDark = {  0,   0,   0, 128};
+
 // Window Colours
 enum Color windowBGLight = {250, 250, 250, 255};
 enum Color windowBGDark  = { 36,  36,  36, 255};
@@ -14,24 +20,24 @@ alias viewFGLight     = windowFGLight;
 alias viewFGDark      = light1;
 
 // Headerbar Colours
-enum Color headerbarBGLight    = {235, 235, 235, 255};
-enum Color headerbarBGDark     = { 48,  48,  48, 255};
-alias headerbarFGLight         = windowFGLight;
-alias headerbarFGDark          = light1;
-alias headerbarBorderLight     = windowFGLight;
-alias headerbarBorderDark      = light1;
-alias headerbarBackdropLight   = windowBGLight;
-alias headerbarBackdropDark    = windowBGDark;
-enum Color headerbarShadeLight = {  0,   0,   0,  18};
-enum Color headerbarShadeDark  = {  0,   0,   0,  92};
+enum Color headerbarBGLight  = {235, 235, 235, 255};
+enum Color headerbarBGDark   = { 48,  48,  48, 255};
+alias headerbarFGLight       = windowFGLight;
+alias headerbarFGDark        = light1;
+alias headerbarBorderLight   = windowFGLight;
+alias headerbarBorderDark    = light1;
+alias headerbarBackdropLight = windowBGLight;
+alias headerbarBackdropDark  = windowBGDark;
+alias headerbarShadeLight    = shadeLight;
+alias headerbarShadeDark     = shadeDark;
 
 // Card Colours
 alias cardBGLight     = light1;
 enum Color cardBGDark = {255, 255, 255,  20};
 alias cardFGLight     = windowFGLight;
 alias cardFGDark      = light1;
-alias cardShadeLight  = headerbarShadeLight;
-alias cardShadeDark   = headerbarShadeDark;
+alias cardShadeLight  = shadeLight;
+alias cardShadeDark   = shadeDark;
 
 // Thumbnail Colours
 alias thumbnailBGLight     = light1;
