@@ -24,3 +24,11 @@ enum Color successBGLight = { 46, 194, 126, 255};
 enum Color successBGDark  = { 38, 162, 105, 255};
 alias successFGLight = light1;
 alias successFGDark  = light1;
+
+// Warning Colours
+enum Color warningLight   = {156, 110,   3, 255};
+enum Color warningDark    = {248, 228,  92, 255};
+enum Color warningBGLight = {229, 165,  10, 255};
+enum Color warningBGDark  = {205, 147,   9, 255};
+enum Color warningFGLight = {  0,   0,   0, 204};
+alias warningFGDark  = warningFGLight;
