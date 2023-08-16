@@ -2,21 +2,21 @@ module raylib_misc.colors.adwaita;
 import raylib;
 
 // Palette Colors
-enum Color blue1  = {153, 193, 241, 255};
-enum Color blue2  = { 98, 160, 234, 255};
-enum Color blue3  = { 53, 132, 228, 255};
-enum Color blue4  = { 28, 113, 216, 255};
-enum Color blue5  = { 26,  95, 180, 255};
-enum Color green1 = {143, 240, 164, 255};
-enum Color green2 = { 87, 227, 137, 255};
-enum Color green3 = { 51, 209, 122, 255};
-enum Color green4 = { 46, 194, 126, 255};
-enum Color green5 = { 38, 162, 105, 255};
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
+enum Color blue1   = {153, 193, 241, 255};
+enum Color blue2   = { 98, 160, 234, 255};
+enum Color blue3   = { 53, 132, 228, 255};
+enum Color blue4   = { 28, 113, 216, 255};
+enum Color blue5   = { 26,  95, 180, 255};
+enum Color green1  = {143, 240, 164, 255};
+enum Color green2  = { 87, 227, 137, 255};
+enum Color green3  = { 51, 209, 122, 255};
+enum Color green4  = { 46, 194, 126, 255};
+enum Color green5  = { 38, 162, 105, 255};
+enum Color yellow1 = {249, 240, 107, 255};
+enum Color yellow2 = {248, 228,  92, 255};
+enum Color yellow3 = {246, 211,  45, 255};
+enum Color yellow4 = {245, 194,  17, 255};
+enum Color yellow5 = {229, 165,  10, 255};
 enum Color 
 enum Color 
 enum Color 
