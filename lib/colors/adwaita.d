@@ -25,11 +25,12 @@ enum Color orange2 = {255, 163,  72, 255};
 enum Color orange3 = {255, 120,   0, 255};
 enum Color orange4 = {230,  97,   0, 255};
 enum Color orange5 = {198,  70,   0, 255};
-enum Color 
-enum Color 
-enum Color 
-enum Color 
-enum Color 
+
+enum Color red1    = {246,  97,  81, 255};
+enum Color red2    = {237,  51,  59, 255};
+enum Color red3    = {224,  27,  36, 255};
+enum Color red4    = {192,  28,  40, 255};
+enum Color red5    = {165,  29,  45, 255};
 enum Color 
 enum Color 
 enum Color 
