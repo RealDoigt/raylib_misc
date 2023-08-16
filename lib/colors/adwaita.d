@@ -32,3 +32,11 @@ enum Color warningBGLight = {229, 165,  10, 255};
 enum Color warningBGDark  = {205, 147,   9, 255};
 enum Color warningFGLight = {  0,   0,   0, 204};
 alias warningFGDark  = warningFGLight;
+
+// Error Colours
+alias errorLight   = destructiveLight;
+alias errorDark    = destructiveDark;
+alias errorBGLight = destructiveBGLight;
+alias errorBGDark  = destructiveBGDark;
+alias errorFGLight = destructiveFGLight;
+alias errorFGDark  = destructiveFGDark;
