@@ -39,6 +39,18 @@ enum Color thumbnailBGDark = { 56,  56,  56, 255};
 alias thumbnailFGLight     = windowFGLight;
 alias thumbnailFGDark      = light1;
 
+// Dialog Colours
+alias dialogBGLight = light1;
+alias dialogBGDark  = thumbnailBGDark;
+alias dialogFGLight = windowFGLight;
+alias dialogFGDark  = light1;
+
+// Popover Colours
+alias popoverBGLight = light1;
+alias popoverBGDark  = thumbnailBGDark;
+alias popoverFGLight = windowFGLight;
+alias popoverFGDark  = light1;
+
 // Accent Colours
 enum Color accentLight   = { 28, 113, 216, 255};
 enum Color accentDark    = {120, 174, 237, 255};
