@@ -1,6 +1,12 @@
 module raylib_misc.colors.adwaita;
 import raylib;
 
+// Window Colours
+enum Color windowBGLight   = {250, 250, 250, 255};
+enum Color windowBGDark    = { 36,  36,  36, 255};
+enum Color windowFGLight = {  0,   0,   0, 204};
+alias windowFGDark  = light1;
+
 // Accent Colours
 enum Color accentLight   = { 28, 113, 216, 255};
 enum Color accentDark    = {120, 174, 237, 255};
@@ -30,7 +36,7 @@ enum Color warningLight   = {156, 110,   3, 255};
 enum Color warningDark    = {248, 228,  92, 255};
 enum Color warningBGLight = {229, 165,  10, 255};
 enum Color warningBGDark  = {205, 147,   9, 255};
-enum Color warningFGLight = {  0,   0,   0, 204};
+alias warningFGLight = windowFGLight;
 alias warningFGDark  = warningFGLight;
 
 // Error Colours
