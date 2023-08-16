@@ -31,6 +31,24 @@ alias headerbarBackdropDark  = windowBGDark;
 alias headerbarShadeLight    = shadeLight;
 alias headerbarShadeDark     = shadeDark;
 
+// Sidebar Colours
+alias sidebarBGLight             = headerbarBGLight;
+alias sidebarBGDark              = headerbarFGDark;
+alias sidebarFGLight             = windowFGLight;
+alias sidebarFGDark              = light1;
+enum Color sidebarBackdropLight  = {242, 242, 242, 255};
+enum Color sidebarBackdropDark   = { 42,  42,  42};
+alias sidebarShadeLight          = shadeLight;
+alias sidebarShadeDark           = shadeDark;
+enum Color sidebar2BGLight       = {243, 243, 243, 255};
+alias sidebar2BGDark             = sidebarBackdropDark;
+alias sidebar2FGLight            = windowFGLight;
+alias sidebar2FGDark             = light1;
+enum Color sidebar2BackdropLight = {246, 246, 246, 255};
+enum Color sidebar2BackdropDark  = { 39,  39,  39, 255};
+alias sidebar2ShadeLight         = shadeLight;
+alias sidebar2ShadeDark          = shadeDark;
+
 // Card Colours
 alias cardBGLight     = light1;
 enum Color cardBGDark = {255, 255, 255,  20};
