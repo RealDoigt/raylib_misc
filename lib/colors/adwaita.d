@@ -1,6 +1,54 @@
 module raylib_misc.colors.adwaita;
 import raylib;
 
+// Palette Colors
+enum Color blue1 = {153, 193, 241, 255};
+enum Color blue2 = { 98, 160, 234, 255};
+enum Color blue3 = { 53, 132, 228, 255};
+enum Color blue4 = { 28, 113, 216, 255};
+enum Color blue5 = { 26,  95, 180, 255};
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+enum Color 
+
 // Miscellaneous Colors
 enum Color shadeLight           = {  0,   0,   0,  18};
 enum Color shadeDark            = {  0,   0,   0,  92};
