@@ -21,3 +21,15 @@ enum Color qtGray   = {160, 160, 164, 255};
 alias qtDarkGray    = gray;
 alias qtLightGray   = silver;
 alias qtTransparent = transparent;
+
+// SFML Colors
+alias sfWhite       = white;
+alias sfBlack       = black;
+alias sfCyan        = aqua;
+alias sfRed         = red;
+alias sfMagenta     = fuchsia;
+alias sfGreen       = lime;
+alias sfYellow      = yellow;
+alias sfBlue        = blue;
+alias sfGray        = gray;
+alias sfTransparent = transparent;
