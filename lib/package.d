@@ -5,5 +5,6 @@ public
     import raylib_misc.images;
     import raylib_misc.shapes;
     import raylib_misc.texts;
+    import raylib_misc.audio;
 }
 
