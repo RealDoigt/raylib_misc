@@ -67,4 +67,9 @@ __gshared class Window
     {
         MinimiseWindow;
     }
+    
+    void restore()
+    {
+        RestoreWindow;
+    }
 }
