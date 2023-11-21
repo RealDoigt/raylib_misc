@@ -62,4 +62,9 @@ __gshared class Window
     {
         MaximiseWindow;
     }
+    
+    void minimise()
+    {
+        MinimiseWindow;
+    }
 }
