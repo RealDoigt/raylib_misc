@@ -57,4 +57,9 @@ __gshared class Window
     {
         ToggleBorderlessWindowed;
     }
+    
+    void maximise()
+    {
+        MaximiseWindow;
+    }
 }
