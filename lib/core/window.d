@@ -47,4 +47,9 @@ __gshared class Window
     {
         return IsWindowMaximised();
     }
+    
+    void toggleFullscreen()
+    {
+        ToggleFullscreen;
+    }
 }
