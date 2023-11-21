@@ -23,5 +23,8 @@ __gshared class Window
         return WindowShouldClose;
     }
     
-    
+    auto isReady()
+    {
+        return IsWindowReady;
+    }
 }
