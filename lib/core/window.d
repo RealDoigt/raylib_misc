@@ -52,4 +52,9 @@ __gshared class Window
     {
         ToggleFullscreen;
     }
+    
+    void toggleBorderlessWindowed()
+    {
+        ToggleBorderlessWindowed;
+    }
 }
