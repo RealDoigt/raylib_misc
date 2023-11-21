@@ -32,4 +32,9 @@ __gshared class Window
     {
         return IsWindowFullscreen;
     }
+    
+    auto isHidden()
+    {
+        return IsWindowHidden;
+    }
 }
