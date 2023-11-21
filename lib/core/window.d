@@ -72,4 +72,9 @@ __gshared class Window
     {
         RestoreWindow;
     }
+    
+    void setIcon(Img image)
+    {
+        SetWindowIcon(image);
+    }
 }
