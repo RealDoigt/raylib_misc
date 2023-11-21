@@ -37,4 +37,9 @@ __gshared class Window
     {
         return IsWindowHidden;
     }
+    
+    auto isMinimized()
+    {
+        return IsWindowMinimized;
+    }
 }
