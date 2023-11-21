@@ -27,4 +27,9 @@ __gshared class Window
     {
         return IsWindowReady;
     }
+    
+    auto isFullscreen()
+    {
+        return IsWindowFullscreen;
+    }
 }
