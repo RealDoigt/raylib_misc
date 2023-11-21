@@ -1,7 +1,7 @@
 module raylib_misc.core.window;
 import raylib;
 
-class Window
+__gshared class Window
 {
     private 
     {
@@ -17,4 +17,11 @@ class Window
     {
         CloseWindow;
     }
+    
+    auto shouldClose()
+    {
+        return WindowShouldClose;
+    }
+    
+    
 }
