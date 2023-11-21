@@ -42,4 +42,9 @@ __gshared class Window
     {
         return IsWindowMinimized;
     }
+    
+    auto isMaximised()
+    {
+        return IsWindowMaximised();
+    }
 }
