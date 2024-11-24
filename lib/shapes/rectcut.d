@@ -1,4 +1,4 @@
-module raylib_misc.ui.rectcut;
+module raylib_misc.shapes.rectcut;
 import raylib_misc.shapes.rectangle;
 import raylib_misc.colors.web;
 import std.algorithm;
