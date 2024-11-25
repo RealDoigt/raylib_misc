@@ -1,8 +1,8 @@
-module raylib_misc.shapes.rectangle;
+module door.shapes.rectangle;
 
-import raylib_misc.shapes.circle;
-import raylib_misc.shapes.shape;
-import raylib_misc.colors.web;
+import door.shapes.circle;
+import door.shapes.shape;
+import door.colors.web;
 import raylib;
 
 class Rect : Shape
