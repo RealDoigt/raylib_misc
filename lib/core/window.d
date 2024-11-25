@@ -17,6 +17,14 @@ __gshared class Window
     {
         CloseWindow;
     }
+
+    static getInstance(int width, int height, string title)
+    {
+        if (window is null)
+            window = new Window(width, height, title.toStringz);
+
+        return window;
+    }
     
     auto shouldClose()
     {
