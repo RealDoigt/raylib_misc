@@ -17,6 +17,14 @@ __gshared class Window
     {
         CloseWindow;
     }
+
+    static getInstance(int width, int height, string title)
+    {
+        if (window is null)
+            window = new Window(width, height, title.toStringz);
+
+        return window;
+    }
     
     auto shouldClose()
     {
@@ -76,5 +84,11 @@ __gshared class Window
     void setIcon(Img image)
     {
         SetWindowIcon(image);
+    }
+
+    void close()
+    {
+        CloseWindow;
+        window = null;
     }
 }
