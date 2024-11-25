@@ -1,4 +1,4 @@
-module raylib_misc.core.window;
+module door.core.window;
 import raylib;
 
 __gshared class Window
