@@ -1,9 +1,9 @@
-module raylib_misc.colors;
+module door.colors;
 public
 {
-    import raylib_misc.colors.translucent;
-    import raylib_misc.colors.adwaita;
-    import raylib_misc.colors.other;
-    import raylib_misc.colors.web;
-    import raylib_misc.colors.x11;
+    import door.colors.translucent;
+    import door.colors.adwaita;
+    import door.colors.other;
+    import door.colors.web;
+    import door.colors.x11;
 }
