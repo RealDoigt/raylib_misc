@@ -1,4 +1,4 @@
-module raylib_misc.colors.x11;
+module door.colors.x11;
 import raylib;
 
 enum Color x11Snow                 = {255, 250, 250, 255};
