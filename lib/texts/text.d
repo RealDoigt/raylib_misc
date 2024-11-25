@@ -1,5 +1,5 @@
-module raylib_misc.texts.text;
-import raylib_misc.colors;
+module door.texts.text;
+import door.colors;
 import std.string;
 import std.conv;
 import raylib;
