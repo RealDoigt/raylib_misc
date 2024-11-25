@@ -1,5 +1,5 @@
-module raylib_misc.audio.stream;
-import raylib_misc;
+module door.audio.stream;
+import door;
 import raylib;
 
 class Audio : IAudio
