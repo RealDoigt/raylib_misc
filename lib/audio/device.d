@@ -1,4 +1,4 @@
-module raylib_misc.audio.device;
+module door.audio.device;
 import raylib;
 
 __gshared class AudioDevice

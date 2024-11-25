@@ -1,4 +1,4 @@
-module raylib_misc.colors.adwaita;
+module door.colors.adwaita;
 import raylib;
 
 // Palette Colors

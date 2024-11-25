@@ -1,7 +1,7 @@
-module raylib_misc.shapes.factory;
-import raylib_misc.shapes.rectangle;
-import raylib_misc.shapes.regular;
-import raylib_misc.colors.web;
+module door.shapes.factory;
+import door.shapes.rectangle;
+import door.shapes.regular;
+import door.colors.web;
 import raylib;
 
 enum RegularPolygons

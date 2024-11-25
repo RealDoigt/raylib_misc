@@ -1,6 +1,6 @@
-module raylib_misc.texts.custom;
-import raylib_misc.texts.text;
-import raylib_misc.colors.web;
+module door.texts.custom;
+import door.texts.text;
+import door.colors.web;
 import raylib;
 
 class CustomText : Text

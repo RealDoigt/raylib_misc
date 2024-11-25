@@ -1,6 +1,6 @@
-module raylib_misc.shapes.regular;
-import raylib_misc.shapes.shape;
-import raylib_misc.colors.web;
+module door.shapes.regular;
+import door.shapes.shape;
+import door.colors.web;
 import raylib;
 
 class RegularPolygon : Shape

@@ -1,7 +1,7 @@
-module raylib_misc.shapes.circle;
-import raylib_misc.shapes.rectangle;
-import raylib_misc.shapes.shape;
-import raylib_misc.colors.web;
+module door.shapes.circle;
+import door.shapes.rectangle;
+import door.shapes.shape;
+import door.colors.web;
 import raylib;
 
 class Circle : Shape

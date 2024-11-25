@@ -1,6 +1,6 @@
-module raylib_misc.texts.clickable;
-import raylib_misc;
-import raylib_misc.colors.web;
+module door.texts.clickable;
+import door;
+import door.colors.web;
 import raylib;
 
 class ClickableText : Text

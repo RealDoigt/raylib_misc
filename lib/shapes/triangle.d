@@ -1,6 +1,6 @@
-module raylib_misc.shapes.triangle;
-import raylib_misc.shapes.shape;
-import raylib_misc.colors.web;
+module door.shapes.triangle;
+import door.shapes.shape;
+import door.colors.web;
 import raylib;
 
 // Warning: This class is little bit more "fragile" than other shape classes

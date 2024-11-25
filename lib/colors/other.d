@@ -1,5 +1,5 @@
-module raylib_misc.colors.other;
-import raylib_misc.colors.web;
+module door.colors.other;
+import door.colors.web;
 import raylib;
 
 // Qt Colors

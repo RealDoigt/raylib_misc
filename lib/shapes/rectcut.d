@@ -1,6 +1,6 @@
-module raylib_misc.shapes.rectcut;
-import raylib_misc.shapes.rectangle;
-import raylib_misc.colors.web;
+module door.shapes.rectcut;
+import door.shapes.rectangle;
+import door.colors.web;
 import std.algorithm;
 
 class RectCut : Rect

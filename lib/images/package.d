@@ -1,8 +1,8 @@
-module raylib_misc.images;
+module door.images;
 public
 {
-    import raylib_misc.images.texture;
-    import raylib_misc.images.image;
-    import raylib_misc.images.clickable;
-    import raylib_misc.images.clickable_delegate;
+    import door.images.texture;
+    import door.images.image;
+    import door.images.clickable;
+    import door.images.clickable_delegate;
 }

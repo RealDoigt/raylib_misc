@@ -1,12 +1,12 @@
-module raylib_misc.images.texture;
-import raylib_misc.images.image;
-import raylib_misc.colors.web;
+module door.images.texture;
+import door.images.image;
+import door.colors.web;
 import std.string;
 import raylib;
 
 class Tx2d
 {
-    package(raylib_misc.images) Texture texture;
+    package(door.images) Texture texture;
     alias texture this;
 
     this(string fileName)

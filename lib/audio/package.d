@@ -1,11 +1,11 @@
-module raylib_misc.audio;
+module door.audio;
 
 public
 {
-    import raylib_misc.audio.device;
-    import raylib_misc.audio.stream;
-    import raylib_misc.audio.iaudio;
-    import raylib_misc.audio.music;
-    import raylib_misc.audio.sound;
-    import raylib_misc.audio.wave;
+    import door.audio.device;
+    import door.audio.stream;
+    import door.audio.iaudio;
+    import door.audio.music;
+    import door.audio.sound;
+    import door.audio.wave;
 }
