@@ -1,8 +1,8 @@
-module raylib_misc.texts;
+module door.texts;
 
 public
 {
-    import raylib_misc.texts.text;
-    import raylib_misc.texts.custom;
-    import raylib_misc.texts.clickable;
+    import door.texts.text;
+    import door.texts.custom;
+    import door.texts.clickable;
 }
