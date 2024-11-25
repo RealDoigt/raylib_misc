@@ -48,7 +48,7 @@ class RectCut : Rect
     auto cutBottom(int toCut)
     {
         int originalY = maxY;
-        maxY = max(y, maxY - toCut);
+        height = max(y, maxY - toCut) - y;
         return new RectCut(x, maxY, maxX, originalY, color);
     }
     
@@ -121,5 +121,4 @@ class RectCut : Rect
         maxX -= toCut; 
         maxY -= toCut;
     }
-    */
 }
