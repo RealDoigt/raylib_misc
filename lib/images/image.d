@@ -1,8 +1,8 @@
-module raylib_misc.images.image;
-import raylib_misc.shapes.rectangle;
-import raylib_misc.images.texture;
-import raylib_misc.shapes.circle;
-import raylib_misc.colors.web;
+module door.images.image;
+import door.shapes.rectangle;
+import door.images.texture;
+import door.shapes.circle;
+import door.colors.web;
 import std.string;
 import raylib;
 
@@ -25,7 +25,7 @@ class FileDataIsNullException : Exception
 
 class Img
 {
-    package(raylib_misc.images) Image image;
+    package(door.images) Image image;
     alias image this;
 
     this(string fileName)
