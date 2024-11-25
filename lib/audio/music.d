@@ -1,5 +1,5 @@
-module raylib_misc.audio.music;
-import raylib_misc;
+module door.audio.music;
+import door;
 import std.string;
 import raylib;
 
