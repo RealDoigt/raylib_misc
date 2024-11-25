@@ -85,4 +85,10 @@ __gshared class Window
     {
         SetWindowIcon(image);
     }
+
+    void close()
+    {
+        CloseWindow;
+        window = null;
+    }
 }
