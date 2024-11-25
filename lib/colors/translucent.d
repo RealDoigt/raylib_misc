@@ -1,4 +1,4 @@
-module raylib_misc.colors.translucent;
+module door.colors.translucent;
 import raylib;
 
 enum Color whiteAlpha(ubyte alpha)   = {255, 255, 255, alpha};
