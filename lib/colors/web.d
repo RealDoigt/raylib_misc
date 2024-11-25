@@ -1,4 +1,4 @@
-module raylib_misc.colors.web;
+module door.colors.web;
 import raylib;
 
 // basic colours
