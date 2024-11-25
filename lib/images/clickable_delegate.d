@@ -1,5 +1,5 @@
-module raylib_misc.images.clickable_delegate;
-import raylib_misc.images;
+module door.images.clickable_delegate;
+import door.images;
 import raylib;
 
 class ClickableImageDelegate : ClickableImage
