@@ -27,97 +27,97 @@ class RectCut : Rect
     {
         int originalX = x;
         x = min(maxX, x + toCut);
-        return new RectCut(originalX, y, x, maxY);
+        return new RectCut(originalX, y, x, maxY, color);
     }
     
     auto cutRight(int toCut)
     {
         int originalX = maxX;
         width = max(x, maxX - toCut) - x;
-        return RectCut(maxX, y, originalX, maxY);
+        return new RectCut(maxX, y, originalX, maxY, color);
     }
     
-    /*
+
     auto cutTop(int toCut)
     {
-        int originalY = minY;
-        minY = min(maxX, minY + toCut);
-        return RectCut(minX, originalY, maxX, minY);
+        int originalY = y;
+        y = min(maxX, y + toCut);
+        return new RectCut(x, originalY, maxX, y, color);
     }
     
     auto cutBottom(int toCut)
     {
         int originalY = maxY;
-        maxY = max(minY, maxY - toCut);
-        return RectCut(minX, maxY, maxX, originalY);
+        maxY = max(y, maxY - toCut);
+        return new RectCut(x, maxY, maxX, originalY, color);
     }
     
     auto getLeft(int toCut)
     {
-        int newX = min(maxX, minX + toCut);
-        return RectCut(minX, minY, newX, maxY);
+        int newX = min(maxX, x + toCut);
+        return new RectCut(x, y, newX, maxY, color);
     }
     
     auto getRight(int toCut)
     {
-        int newX = max(minX, maxX - toCut);
-        return RectCut(newX, minY, maxX, maxY);
+        int newX = max(x, maxX - toCut);
+        return new RectCut(newX, y, maxX, maxY, color);
     }
     
     auto getTop(int toCut)
     {
-        int newY = min(maxX, minY + toCut);
-        return RectCut(minX, minY, maxX, newY);
+        int newY = min(maxX, y + toCut);
+        return new RectCut(x, y, maxX, newY, color);
     }
     
     auto getBottom(int toCut)
     {
-        int newY = max(minY, maxY - toCut);
-        return RectCut(minX, newY, maxX, maxY);
+        int newY = max(y, maxY - toCut);
+        return new RectCut(x, newY, maxX, maxY, color);
     }
     
     auto addLeft(int toCut)
     {
-        return RectCut(minX - toCut, minY, maxX, maxY);
+        return new RectCut(x - toCut, y, maxX, maxY, color);
     }
     
     auto addRight(int toCut)
     {
-        return RectCut(minX, minY, maxX + toCut, maxY);
+        return new RectCut(x, y, maxX + toCut, maxY, color);
     }
     
     auto addTop(int toCut)
     {
-        return RectCut(minX, minY - toCut, maxX, maxY);
+        return new RectCut(x, y - toCut, maxX, maxY, color);
     }
     
     auto addBottom(int toCut)
     {
-        return RectCut(minX, minY, maxX, maxY + toCut);
+        return new RectCut(x, y, maxX, maxY + toCut, color);
     }
     
     auto extend(int toCut)
     {
-        return RectCut(minX - toCut, minY - toCut, maxX + toCut, maxY + toCut);
+        return new RectCut(x - toCut, y - toCut, maxX + toCut, maxY + toCut, color);
     }
     
     auto contract(int toCut)
     {
-        return RectCut(minX + toCut, minY + toCut, maxX - toCut, maxY - toCut);
+        return new RectCut(x + toCut, y + toCut, maxX - toCut, maxY - toCut, color);
     }
     
     void selfExtend(int toCut)
     {
-        minX -= toCut; 
-        minY -= toCut; 
+        x -= toCut;
+        y -= toCut;
         maxX += toCut; 
         maxY += toCut;
     }
     
     void selfcontract(int toCut)
     {
-        minX += toCut; 
-        minY += toCut; 
+        x += toCut;
+        y += toCut;
         maxX -= toCut; 
         maxY -= toCut;
     }
