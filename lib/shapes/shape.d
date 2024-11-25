@@ -1,4 +1,4 @@
-module raylib_misc.shapes.shape;
+module door.shapes.shape;
 import raylib;
 
 abstract class Shape
