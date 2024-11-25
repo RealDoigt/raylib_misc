@@ -1,4 +1,4 @@
-module raylib_misc.colors.raylib;
+module door.colors.raylib;
 import raylib;
 
 alias rLightGray = Colors.LIGHTGRAY;
