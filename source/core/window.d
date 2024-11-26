@@ -1,5 +1,7 @@
 module door.core.window;
 import raylib;
+import std.string;
+import door.images.image;
 
 __gshared class Window
 {
@@ -51,9 +53,9 @@ __gshared class Window
         return IsWindowMinimized;
     }
     
-    auto isMaximised()
+    auto isMaximized()
     {
-        return IsWindowMaximised;
+        return IsWindowMaximized;
     }
     
     void toggleFullscreen()
@@ -61,19 +63,19 @@ __gshared class Window
         ToggleFullscreen;
     }
     
-    void toggleBorderlessWindowed()
+    //void toggleBorderless()
+    //{
+    //    ToggleBorderlessWindowed;
+    //} Not sure why that won't compile, maybe it doesn't exist in 4.0? I'll have to check later
+    
+    void maximize()
     {
-        ToggleBorderlessWindowed;
+        MaximizeWindow;
     }
     
-    void maximise()
+    void minimize()
     {
-        MaximiseWindow;
-    }
-    
-    void minimise()
-    {
-        MinimiseWindow;
+        MinimizeWindow;
     }
     
     void restore()
