@@ -1,0 +1,6 @@
+name "door"
+description "D Object Oriented Raylib. A high level, object oriented wrapper for raylib-d and useful extras."
+authors "Doigt"
+copyright "Copyright © 2024, Doigt"
+license "MIT"
+dependency "raylib-d" version="~>4.0.0"

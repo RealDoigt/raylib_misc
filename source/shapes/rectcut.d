@@ -1,4 +1,5 @@
 module door.shapes.rectcut;
+import raylib;
 import door.shapes.rectangle;
 import door.colors.web;
 import std.algorithm;
@@ -110,15 +111,15 @@ class RectCut : Rect
     {
         x -= toCut;
         y -= toCut;
-        maxX += toCut; 
-        maxY += toCut;
+        width += toCut - x;
+        height += toCut - y;
     }
     
     void selfcontract(int toCut)
     {
         x += toCut;
         y += toCut;
-        maxX -= toCut; 
-        maxY -= toCut;
+        width -= toCut - x;
+        height -= toCut - y;
     }
 }
