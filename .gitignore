@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/door
+door.so
+door.dylib
+door.dll
+door.a
+door.lib
+door-test-*
+*.exe
+*.o
+*.obj
+*.lst
