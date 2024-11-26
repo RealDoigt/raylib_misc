@@ -13,3 +13,4 @@ door-test-*
 *.o
 *.obj
 *.lst
+libdoor.a
