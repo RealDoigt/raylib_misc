@@ -25,7 +25,7 @@ class FileDataIsNullException : Exception
 
 class Img
 {
-    package(door.images) Image image;
+    package(door) Image image;
     alias image this;
 
     this(string fileName)
